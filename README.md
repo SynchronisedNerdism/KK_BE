@@ -8,7 +8,7 @@ This mod is very new, there may be multiple bugs, I will try to fix them in a ti
 Bust size of characters increases according to arousal meter and orgasm count</br>
 Supports multiple H modes like group and darkness mode
 
-### Settings:
+### Settings
 Can be changed via plugin settings under Options
 - Enable or disable the mod
 - Whether attached to male or female arousal meter
