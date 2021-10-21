@@ -2,6 +2,8 @@
 I couldn't find any BE mods for Koikatsu, so I made one!!
 This mod is very new, there may be multiple bugs, I will try to fix them in a timely manner
 
+![alt text](https://github.com/SynchronisedNerdism/KK_BE/blob/main/beshowcase.png?raw=true)
+
 ## What does this mod do?
 Bust size of characters increases according to arousal meter and orgasm count</br>
 Supports multiple H modes like group and darkness mode
@@ -25,4 +27,4 @@ Can be changed via plugin settings under Options
 
 ## How to update
 Just download the newest update and replace the .dll file
-![alt text](https://github.com/SynchronisedNerdism/KK_BE/blob/main/beshowcase.png?raw=true)
+
