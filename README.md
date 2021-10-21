@@ -25,4 +25,4 @@ Can be changed via plugin settings under Options
 
 ## How to update
 Just download the newest update and replace the .dll file
-
+![alt text](https://github.com/SynchronisedNerdism/KK_BE/blob/main/beshowcase.png?raw=true)
