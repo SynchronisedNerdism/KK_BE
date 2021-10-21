@@ -26,5 +26,5 @@ Can be changed via plugin settings under Options
 4. Open the game and enjoy!
 
 ## How to update
-Just download the newest update and replace the .dll file
+Just download the latest release and replace the .dll file
 
