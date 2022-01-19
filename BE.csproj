@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeQuality.Analyzers.3.3.2\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('packages\Microsoft.CodeQuality.Analyzers.3.3.2\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D21E94F-7491-46DA-9301-ED289C97B996}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BE</RootNamespace>
+    <AssemblyName>BE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony20">
+      <HintPath>Libs\0Harmony20.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>Libs\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>Libs\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>Libs\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BE.cs" />
+    <Compile Include="BECalculator.cs" />
+    <Compile Include="Interpolation.cs" />
+    <Compile Include="MathUtils.cs" />
+    <Compile Include="Hooks\BEMasturbationHook.cs" />
+    <Compile Include="Hooks\BEHSceneEnd.cs" />
+    <Compile Include="Hooks\BEHSceneStart.cs" />
+    <Compile Include="OrgasmCounter.cs" />
+    <Compile Include="Hooks\BEFemaleGaugeHook.cs" />
+    <Compile Include="Hooks\BEMaleGaugeHook.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.3.3.2\analyzers\dotnet\cs\Humanizer.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.3.3.2\analyzers\dotnet\cs\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="packages\Microsoft.CodeQuality.Analyzers.3.3.2\analyzers\dotnet\cs\Microsoft.CodeQuality.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeQuality.Analyzers.3.3.2\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeQuality.Analyzers.3.3.2\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeQuality.Analyzers.3.3.2\build\Microsoft.CodeQuality.Analyzers.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeQuality.Analyzers.3.3.2\build\Microsoft.CodeQuality.Analyzers.targets'))" />
+  </Target>
+  <Import Project="packages\Microsoft.CodeQuality.Analyzers.3.3.2\build\Microsoft.CodeQuality.Analyzers.targets" Condition="Exists('packages\Microsoft.CodeQuality.Analyzers.3.3.2\build\Microsoft.CodeQuality.Analyzers.targets')" />
+</Project>
