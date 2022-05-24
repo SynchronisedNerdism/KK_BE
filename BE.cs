@@ -16,7 +16,7 @@ namespace BE
     public class BE : BaseUnityPlugin
     {
         private const string GUID = "BE";
-        private const string Version = "1.0";
+        private const string Version = "1.1";
         private const string GameProcessName = "Koikatu";
         private const string GameProcessNameSteam = "Koikatsu Party";
 

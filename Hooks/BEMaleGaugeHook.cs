@@ -33,6 +33,10 @@ namespace BE
 
         public static void UpdateBE(HFlag __instance)
         {
+            for (int i = 0; i < BEHSceneStart.nipValuesOne.Length; i++)
+            {
+                BEGetTargetHeroine(__instance).chaCtrl.SetShapeBodyValue(11 + i, BEHSceneStart.nipValuesOne[i]);
+            }
             if (BE.IsOriginalSize.Value == true)
             {
                 BEGetTargetHeroine(__instance).chaCtrl.SetShapeBodyValue(4, BEOriginalInterpolateSize(__instance, true));
@@ -43,6 +47,10 @@ namespace BE
 
                 if (__instance.mode == HFlag.EMode.lesbian || __instance.mode == HFlag.EMode.sonyu3P || __instance.mode == HFlag.EMode.houshi3P)
                 {
+                    for (int i = 0; i < BEHSceneStart.nipValuesTwo.Length; i++)
+                    {
+                        __instance.lstHeroine[1].chaCtrl.SetShapeBodyValue(11 + i, BEHSceneStart.nipValuesTwo[i]);
+                    }
                     __instance.lstHeroine[1].chaCtrl.SetShapeBodyValue(4, BEOriginalInterpolateSize(__instance, false));
                     __instance.lstHeroine[1].chaCtrl.updateShapeBody = true;
                     __instance.lstHeroine[1].chaCtrl.UpdateBustSoftnessAndGravity();
@@ -60,6 +68,10 @@ namespace BE
 
                 if (__instance.mode == HFlag.EMode.lesbian || __instance.mode == HFlag.EMode.sonyu3P || __instance.mode == HFlag.EMode.houshi3P)
                 {
+                    for (int i = 0; i < BEHSceneStart.nipValuesTwo.Length; i++)
+                    {
+                        __instance.lstHeroine[1].chaCtrl.SetShapeBodyValue(11 + i, BEHSceneStart.nipValuesTwo[i]);
+                    }
                     __instance.lstHeroine[1].chaCtrl.SetShapeBodyValue(4, BEInterpolateSize(__instance));
                     __instance.lstHeroine[1].chaCtrl.updateShapeBody = true;
                     __instance.lstHeroine[1].chaCtrl.UpdateBustSoftnessAndGravity();
