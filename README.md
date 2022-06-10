@@ -18,6 +18,8 @@ Can be changed via plugin settings under Options
 - Whether to use original size of bust with a maximum change in size or enter your own start and end size
 - Different ways to scale BE
 
+You can change these settings in the Bepinex plugins menu under Koikatsu settings and scroll to the BE section
+
 
 ## How to install
 1. You need version BepInEx 5.4.4 or later
